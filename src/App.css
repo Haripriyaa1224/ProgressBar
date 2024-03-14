@@ -1,38 +1,26 @@
-.App {
-  text-align: center;
+.progress-bar-container {
+  
+  position:relative;
+  width: 300px; /* Adjust the width of the container as needed */
+  height: 20px; /* Adjust the height of the container as needed */
+  background-color: #f0f0f0; /* Background color of the container */
+  border-radius: 5px; /* Border radius for rounded corners */
+  overflow: hidden; /* Hide overflowing content */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.progress-bar {
+  height: 100%; /* Full height of the container */
+  background-color: #28a745; /* Green color for progress */
+  transition: width 0.5s linear; /* Add smooth transition effect for width changes */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.progress-text {
+  position: absolute; /* Position text absolutely inside the container */
+  top: 0; /* Align text to the top */
+  left: 50%; /* Center text horizontally */
+  transform: translateX(-50%); /* Center text horizontally */
+  line-height: 20px; /* Center text vertically */
+  /* color: #fff; */
+  font-size: 14px; /* Font size of the text */
+  font-weight: 500;
 }
